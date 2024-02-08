@@ -20,7 +20,14 @@ float multiplication (float operand_1, float operand_2){
 float division (float operand_1, float operand_2){
     return(operand_1 / operand_2);
 
-}// The code is defining a `main` method, which is the entry point of the Java program. Inside the
+}
+float square (float operand_1){
+    return(operand_1 * operand_1);
+}
+float cube (float operand_1){
+    return((operand_1 * operand_1 )*operand_1);
+}
+// The code is defining a `main` method, which is the entry point of the Java program. Inside the
 // `main` method, it declares two float variables `operand_1` and `operand_2` and assigns them the
 // values 10 and 5 respectively.
 
@@ -46,6 +53,12 @@ public static void main(String[] args){
 // prints the result of the division using `System.out.println()`.
     float div_result = calc.division(operand_1, operand_2);
     System.out.println("Result of division is: "+div_result);
+
+    float square_result = calc.square(operand_1);
+    System.out.println("Result of square is: "+square_result);
+
+    float cube_result = calc.cube(operand_1);
+    System.out.println("Result of cube is: "+cube_result);
 
 }
 }
